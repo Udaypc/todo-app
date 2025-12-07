@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://images.pexels.com/photos/2736499/pexels-photo-2736499.jpeg');
+  background-size: cover;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 500;
+  color: black;
+  font-family: Bree serif;
+}
+.inputText {
+  width: 45vw;
+  height: 6vh;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #ffffff;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+}
+.inputText:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow:
+    13px 13px 100px #969696,
+    -13px -13px 100px #ffffff;
+}
+.inputTaskContainer {
+  display: flex;
+  flex-direction: column;
+}
+.addButton {
+  height: 4vh;
+  width: 6vw;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Bree Serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.createTaskHeading {
+  font-family: Bree Serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+}
+.myTaskHeading {
+  font-family: Bree Serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: black;
+}
+.myTaskContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 45vw;
+  margin-top: 20px;
+}
+.searchInput {
+  width: 20vw;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+  margin-left: 8px;
+}
+.searchInputContainer {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(227, 213, 255),
+    rgb(255, 231, 231)
+  );
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  margin-top: 24px;
+}
+.searchIconContainer {
+  height: 4vh;
+  margin-top: 15px;
+  color: #000000;
+  text-align: center;
+  width: 25px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.listContainer {
+  width: 50vw;
+}
+.listItem {
+  list-style: none;
+  display: flex;
+  border-style: none;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding-bottom: 20px;
+  box-shadow:
+    rgba(63, 7, 167, 0.25) 0px 54px 55px,
+    rgba(25, 19, 206, 0.12) 0px -12px 30px,
+    rgba(25, 19, 206, 0.12) 0px 4px 6px,
+    rgba(25, 19, 206, 0.12) 0px 12px 13px,
+    rgba(25, 19, 206, 0.12) 0px -3px 5px;
+}
+.checkbox {
+  margin-right: 30px;
+  width: 20px;
+}
+
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  margin-top: 40px;
+  font-family: Bree Serif;
+}
+.deleteIcon {
+  font-size: 25px;
+  margin-top: 40px;
+}
+.editIcon {
+  font-size: 25px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.notFound {
+  font-family: Bree Serif;
+  font-size: 40px;
+}
+.notFoundContainer {
+  margin-bottom: 90px;
+}
